@@ -73,9 +73,13 @@ function Login() {
                 if (data.status) {
                    
                     const dadosParaEnviar = {
-                        nome: data.aluno.nome, // Passa o nome cadastrado
+                        nome: data.aluno.nome,
                         id: data.aluno.id_aluno,
+                        email: data.aluno.email,
                         tipoUsuario: 'Aluno',
+                        data_nascimento: data.aluno.data_nascimento,
+                        foto_perfil: data.aluno.foto_perfil
+
                     };
                     console.log(dadosParaEnviar);
                     

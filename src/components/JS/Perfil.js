@@ -27,6 +27,21 @@ function Perfil() {
 
     // Carregar os dados do perfil ao montar o componente
 
+    function iconNavegacaoPerfil() {
+        const dadosParaEnviar = {
+            id: dados.id,
+            tipoUsuario: dados.tipoUsuario,
+            nome: dados.nome, // Passa o nome cadastrado
+            data_nascimento: dados.data_nascimento,
+            email: dados.email,
+            foto_perfil: dados.foto_perfil
+
+        };
+        setDados(dadosParaEnviar);
+            navigate('/EditarPerfil')
+    }
+
+
     useEffect(() => {
         // Simulação de uma função que busca os dados do aluno após login/cadastro
         async function buscarAlunoLogado() {
@@ -113,9 +128,9 @@ console.log(data);
         navigate('/Configuracoes');
     }
 
-    function iconNavegacaoEditar() {
-        navigate('/EditarPerfil');
-    }
+    //function iconNavegacaoEditar() {
+       // navigate('/EditarPerfil');
+   // }
 
     return (
         <div className='App'>
@@ -147,7 +162,7 @@ console.log(data);
                     </div>
                 </main>
 
-                <div className={styles.quadradinho} onClick={iconNavegacaoEditar}>
+                <div className={styles.quadradinho} onClick={iconNavegacaoPerfil}>
                     <button className={styles.span1}>Editar Perfil</button>
                 </div>
 

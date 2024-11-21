@@ -1,129 +1,120 @@
-.AppHeader {
-    background: linear-gradient(#C7E2FE, #C7E2FE, #0f70d8);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #a3d5ff, #0066cc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .AppHeader  .user{
-    display: flex;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .perfil {
-    height: auto;
-    margin-bottom: -110px; /* Ajustar o espaço entre o perfil e os quadrados */
-  }
-  
-  .voltar {
-    margin: 400px;
-    position: absolute; /*ajustar a posição do botão voltar */
-    top: 370px;
-    left: 799px;
-  }
+.editarPerfilContainer {
+  width: 80vw;
+  height: 100vh;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  
-  .quadrado, .quadrado2, .quadrado3, .quadrado4, .quadrado5 {
-    background-color: #334EAC;
-    border-radius: 10px;
-    height: 100px;
-    width: 450px;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(10, 10, 10);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
-  }
-  
-  .quadrado2 {
-    width: 350px; 
-    transform: translateY(78px);
-    border: 2px solid #04509C;
-    background-color: rgba(52, 152, 319, 0.1);
-  }
-  
-  .quadrado3 {
-    width: 350px;
-    transform: translateY(85px);
-    border: 2px solid #04509C;
-    background-color: rgba(52, 152, 319, 0.1);
-  }
-  
-  .quadrado4 {
-    width: 350px;
-    transform: translateY(98px);
-    background-color: rgba(52, 152, 319, 0.2); 
-    border: 2px solid #04509C
-  }
-  
-  .quadrado5 {
-    background-color: #3DAAE1;
-    width: 350px;
-    transform: translateY(100px);
-    border: 2px solid #04509C;
-    color: rgb(250, 248, 248);
-    cursor: pointer;
-   
-  }
-  
-  
-  .calendario {
-    transform: translate(-387px);
-    position: absolute; 
-    margin-top: 227px;
-    right: 514px;
-  }
-  
-  .ir {
-    position: absolute; 
-    bottom: 930px;
-    right: 2050px;
-  }
-  
-  .quadrado{
-    transform: translateY(545px);
-    color: rgb(250, 248, 248);
-  }
-  
-  h1{
-    transform: translateY(-200px);
-    
-  }
-  
-  .quadrado6{
-  height: 20px;
-  width: 56px;
-  background-color: #fcfcfc;
-  border-radius: 8px;
-  transform: translateY(-220px);
-  margin-left: -276px;
-  }
-  
-  
-  .quadrado7{
-    height: 20px;
-    width: 135px;
-    background-color: #fcfcfc;
-    border-radius: 8px;
-    transform: translateY(-160px);
-    margin-left: -197px;
-  }
-  
-  
-  .nome{
-    transform: translateY(-20px);
-  }
-  
-  .quadrado8{
-    height: 20px;
-    width: 56px;
-    background-color: #fcfcfc;
-    border-radius: 8px;
-    transform: translateY(-100px);
-    margin-left: -272px;
-  }
+.editarPerfilHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.voltarButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+  margin: 0;
+}
+
+.fotoPerfil {
+  margin: 20px 0;
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.formulario {
+  margin: 20px 0;
+}
+
+.foto{
+  background-size:cover;
+  background-position: center;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.inputGroup label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.inputIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.alterarSenhaButton {
+  background-color: #0099ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.salvarButton {
+  background-color: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}

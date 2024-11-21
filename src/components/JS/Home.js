@@ -46,6 +46,9 @@ function Home() {
             id: dados.id,
             tipoUsuario: dados.tipoUsuario,
             nome: dados.nome, // Passa o nome cadastrado
+            data_nascimento: dados.data_nascimento,
+            email: dados.email,
+            foto_perfil: dados.foto_perfil
 
         };
         setDados(dadosParaEnviar);

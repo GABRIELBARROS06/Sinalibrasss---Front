@@ -1,4 +1,6 @@
 
+
+
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Cadastro from './components/JS/Cadastro'
@@ -17,6 +19,7 @@ import { AppProvider } from './context/AppContext'; // Importa o contexto
 
 import React from 'react';
 
+// Import the functions you need from the SDKs you need
 
 
 function App() {
